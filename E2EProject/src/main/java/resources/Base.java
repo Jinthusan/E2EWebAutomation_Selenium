@@ -1,4 +1,4 @@
-package SeleniumWebAutomation;
+package resources;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -20,11 +20,11 @@ public class Base {
 		Properties prop = new Properties();// Initialize the data driven object
 		// Give file path
 		FileInputStream file = new FileInputStream(
-				"E:\\SLIIT\\QA Udemy\\Selenium\\Git_E2E_Web_Automation\\E2EProject\\src\\main\\java\\SeleniumWebAutomation\\data.properties");
+				"E:\\SLIIT\\QA Udemy\\Selenium\\Git_E2E_Web_Automation\\E2EProject\\src\\main\\java\\resources\\data.properties");
 		prop.load(file);// load file into data driven object
 		String browserName = prop.getProperty("browser");// derive properties from data.properties
 
-		if (browserName == "chrome") {
+		if (browserName.equals("chrome") ) {
 			System.setProperty("webdriver.chrome.driver",
 					"E:\\SLIIT\\QA Udemy\\Selenium\\Softwares\\Driver\\chromedriver.exe");
 			driver = new ChromeDriver();
