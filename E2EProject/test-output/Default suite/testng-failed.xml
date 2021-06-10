@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SeleniumWebAutomation.HomePage">
+      <class name="SeleniumWebAutomation.Assertion">
         <methods>
           <include name="basePageNavigation"/>
         </methods>
-      </class> <!-- SeleniumWebAutomation.HomePage -->
+      </class> <!-- SeleniumWebAutomation.Assertion -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
