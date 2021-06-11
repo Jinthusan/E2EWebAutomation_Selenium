@@ -14,10 +14,11 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 public class Base {
 
 	public WebDriver driver;
+	public Properties prop;
 
 	public WebDriver webDriverInitializer() throws IOException {
 
-		Properties prop = new Properties();// Initialize the data driven object
+		 prop = new Properties();// Initialize the data driven object
 		// Give file path
 		FileInputStream file = new FileInputStream(
 				"E:\\SLIIT\\QA Udemy\\Selenium\\Git_E2E_Web_Automation\\E2EProject\\src\\main\\java\\resources\\data.properties");

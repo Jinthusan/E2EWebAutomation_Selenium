@@ -2,6 +2,8 @@ package SeleniumWebAutomation;
 
 import java.io.IOException;
 
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -11,11 +13,16 @@ import resources.Base;
 
 public class HomePage extends Base{
 	
+	@BeforeTest
+	public void initateDriver() throws IOException {
+		driver = webDriverInitializer();
+		
+	}
+	
 	@Test(dataProvider = "getData")
 	public void basePageNavigation(String username, String password) throws IOException {
 		
-		driver = webDriverInitializer();
-		driver.get("http://qaclickacademy.com/");
+		driver.get(prop.getProperty("url"));
 		LandingPage lp = new LandingPage(driver);
 		lp.getLogin().click();
 		LoginPage lgp = new LoginPage(driver);
@@ -23,6 +30,11 @@ public class HomePage extends Base{
 		lgp.getPassword().sendKeys(password);
 		//System.out.println(text);
 		lgp.getLoginButton().click();
+	}
+	
+	@AfterTest
+	public void closeBrowserWindows() {
+		driver.close();
 	}
 	
 	@DataProvider
