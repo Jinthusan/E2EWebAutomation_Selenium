@@ -1,5 +1,5 @@
 package resources;
-
+import resources.Base;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;

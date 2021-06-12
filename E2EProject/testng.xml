@@ -4,8 +4,8 @@
   <test thread-count="5" name="Test">
     <classes>
     <class name="SeleniumWebAutomation.HomePage"/>
-      <class name="SeleniumWebAutomation.ValidateTitle"/>
-      <class name="SeleniumWebAutomation.ValidateNavBar"/>
+     <class name="SeleniumWebAutomation.ValidateTitle"/>   
+     <class name="SeleniumWebAutomation.ValidateNavBar"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -1,0 +1,8 @@
+10:08:48.048 [main] INFO  resources.Base - driver initialized
+10:08:49.201 [main] INFO  resources.Base - Driver Initiated
+10:09:01.427 [main] INFO  resources.Base - Driver Initiated
+10:09:26.928 [main] INFO  resources.Base - Logged in successfully
+10:09:29.099 [main] INFO  resources.Base - Logged in successfully
+10:09:29.131 [main] INFO  resources.Base - Validated the title successfully
+10:09:29.167 [main] INFO  resources.Base - Validated the NavBar successfully
+10:09:29.255 [main] INFO  resources.Base - Browser closed
