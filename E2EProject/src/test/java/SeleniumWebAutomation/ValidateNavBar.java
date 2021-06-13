@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
@@ -16,6 +17,7 @@ import resources.Base;
 
 public class ValidateNavBar extends Base{
 	
+	public WebDriver driver;
 	public static Logger log = LogManager.getLogger(Base.class.getName());
 	
 	@BeforeTest
@@ -26,7 +28,7 @@ public class ValidateNavBar extends Base{
 	}
 	
 	@Test
-	public void basePageNavigation() throws IOException {
+	public void validateNavBar() throws IOException {
 		
 		
 		LandingPage lp = new LandingPage(driver);

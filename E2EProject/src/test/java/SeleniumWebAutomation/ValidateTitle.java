@@ -3,6 +3,7 @@ package SeleniumWebAutomation;
 import java.io.IOException;
 
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebDriver;
 import org.apache.logging.log4j.LogManager;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -16,6 +17,7 @@ import resources.Base;
 
 public class ValidateTitle extends Base{
 	
+	public WebDriver driver;
 	public static Logger log = LogManager.getLogger(Base.class.getName());
 	
 	@BeforeTest
@@ -26,11 +28,11 @@ public class ValidateTitle extends Base{
 	}
 	
 	@Test
-	public void basePageNavigation() throws IOException {
+	public void ValidateAppTitle() throws IOException {
 		
 		LandingPage lp = new LandingPage(driver);
 		
-		Assert.assertEquals(lp.getTitle().getText(), "FEATURED COURSES");
+		Assert.assertEquals(lp.getTitle().getText(), "FEATURED COURSES123");
 		log.info("Validated the title successfully");
 		
 	}

@@ -1,0 +1,9 @@
+10:09:47.006 [TestNG-tests-3] INFO  resources.Base - Validated the NavBar successfully
+10:09:47.313 [TestNG-tests-3] INFO  resources.Base - Browser closed
+10:09:47.954 [TestNG-tests-2] INFO  resources.Base - Browser closed
+10:09:48.838 [TestNG-tests-1] INFO  resources.Base - Logged in successfully
+10:09:50.979 [TestNG-tests-1] INFO  resources.Base - Logged in successfully
+10:09:51.055 [TestNG-tests-1] INFO  resources.Base - Browser closed
+10:12:51.850 [TestNG-tests-3] INFO  resources.Base - Driver Initiated
+10:12:51.850 [TestNG-tests-2] INFO  resources.Base - Driver Initiated
+10:12:51.850 [TestNG-tests-1] INFO  resources.Base - driver initialized

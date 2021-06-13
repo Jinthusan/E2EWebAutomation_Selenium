@@ -1,2 +1,6 @@
-10:09:29.343 [main] INFO  resources.Base - Browser closed
-10:09:29.464 [main] INFO  resources.Base - Browser closed
+10:13:04.399 [TestNG-tests-2] INFO  resources.Base - Browser closed
+10:13:04.558 [TestNG-tests-3] INFO  resources.Base - Validated the NavBar successfully
+10:13:04.688 [TestNG-tests-3] INFO  resources.Base - Browser closed
+10:13:07.104 [TestNG-tests-1] INFO  resources.Base - Logged in successfully
+10:13:09.254 [TestNG-tests-1] INFO  resources.Base - Logged in successfully
+10:13:09.321 [TestNG-tests-1] INFO  resources.Base - Browser closed

@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
-    <classes>
-    <class name="SeleniumWebAutomation.HomePage"/>
-     <class name="SeleniumWebAutomation.ValidateTitle"/>   
-     <class name="SeleniumWebAutomation.ValidateNavBar"/>
-    </classes>
-  </test> <!-- Test -->
+<suite name="Suite" parallel="tests">
+
+<listeners>
+     <listener class-name="SeleniumWebAutomation.Listeners"/>
+</listeners> 
+	<test name="TestHompage">
+		<classes>
+			<class name="SeleniumWebAutomation.HomePage" />
+		</classes>
+	</test>
+	<test name="TestTitleValidation">
+		<classes>
+			<class name="SeleniumWebAutomation.ValidateTitle" />
+		</classes>
+	</test>
+	<test name="TestNavBarValidation">
+		<classes>
+			<class name="SeleniumWebAutomation.ValidateNavBar" />
+		</classes>
+	</test>
 </suite> <!-- Suite -->
