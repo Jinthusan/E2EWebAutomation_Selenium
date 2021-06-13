@@ -7,25 +7,36 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+
 import resources.Base;
+import resources.ExtentReport;
 
 public class Listeners extends Base implements ITestListener{
-
+	ExtentReports extent = ExtentReport.getReporterObject();
+	ExtentTest test;
+	ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest> ();
 	@Override
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
+		
+		test = extent.createTest(result.getMethod().getMethodName());
+		extentTest.set(test);
 		
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
-		
+		extentTest.get().log(Status.PASS, "TestPass");
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
+		extentTest.get().fail(result.getThrowable());
 		WebDriver driver = null;
 		String testMethodName = result.getMethod().getMethodName();
 		try {
@@ -34,6 +45,7 @@ public class Listeners extends Base implements ITestListener{
 			
 		}
 		try {
+			extentTest.get().addScreenCaptureFromPath(getScreenshotPath(testMethodName, driver), result.getMethod().getMethodName());
 			getScreenshotPath(testMethodName, driver);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -68,7 +80,7 @@ public class Listeners extends Base implements ITestListener{
 	@Override
 	public void onFinish(ITestContext context) {
 		// TODO Auto-generated method stub
-		
+		extent.flush();
 	}
 
 	@Override
