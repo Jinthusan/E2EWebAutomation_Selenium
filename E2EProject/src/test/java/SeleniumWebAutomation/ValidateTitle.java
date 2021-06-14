@@ -32,7 +32,7 @@ public class ValidateTitle extends Base{
 		
 		LandingPage lp = new LandingPage(driver);
 		
-		Assert.assertEquals(lp.getTitle().getText(), "FEATURED COURSES123");
+		Assert.assertEquals(lp.getTitle().getText(), "FEATURED COURSES");
 		log.info("Validated the title successfully");
 		
 	}
