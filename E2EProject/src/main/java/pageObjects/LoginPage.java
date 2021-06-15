@@ -8,9 +8,9 @@ public class LoginPage {
 
 	public WebDriver driver;
 
-	By username = By.id("user_email");
-	By password = By.id("user_password");
-	By loginButton = By.name("commit");
+	By username = By.xpath("//input[@name='username']");
+	By password = By.xpath("//input[@id='password']");
+	By loginButton = By.id("Login");
 
 	public LoginPage(WebDriver driver) {
 		// TODO Auto-generated constructor stub

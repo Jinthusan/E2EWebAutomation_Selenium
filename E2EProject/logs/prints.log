@@ -1,5 +1,7 @@
-12:02:54.951 [main] INFO  resources.Base - Validated the title successfully
-12:02:55.020 [main] INFO  resources.Base - Browser closed
-12:02:56.365 [main] INFO  resources.Base - Driver Initiated
-12:03:01.400 [main] INFO  resources.Base - Validated the NavBar successfully
-12:03:01.470 [main] INFO  resources.Base - Browser closed
+08:36:34.886 [main] INFO  resources.Base - Browser closed
+08:36:37.155 [main] INFO  resources.Base - Driver Initiated
+08:36:53.257 [main] INFO  resources.Base - Validated the title successfully
+08:36:53.383 [main] INFO  resources.Base - Browser closed
+08:36:55.105 [main] INFO  resources.Base - Driver Initiated
+08:37:15.368 [main] INFO  resources.Base - Validated the NavBar successfully
+08:37:15.472 [main] INFO  resources.Base - Browser closed

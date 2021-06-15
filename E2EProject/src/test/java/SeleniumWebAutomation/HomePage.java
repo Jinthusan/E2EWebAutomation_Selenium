@@ -50,12 +50,12 @@ public class HomePage extends Base{
 		Object[][] data = new Object[2][2];
 		
 		//1st user (Restricted)
-		data[0][0] = "abc@a.com";
+		data[0][0] = "restricteduser@a.com";
 		data[0][1] = "123";
 		//data[0][2] = "Restricted User";
 		
 		//2nd User (Non restricted user)
-		data[1][0] = "cde@a.com";
+		data[1][0] = "nonrestricteduser@a.com";
 		data[1][1] = "456";
 		//data[1][2] = "Non restricted User";
 		

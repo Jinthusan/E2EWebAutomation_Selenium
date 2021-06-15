@@ -1,88 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-13T13:23:33 IST" name="Suite" finished-at="2021-06-13T13:23:49 IST" duration-ms="16572">
+  <suite started-at="2021-06-15T08:35:04 IST" name="Suite" finished-at="2021-06-15T08:37:15 IST" duration-ms="130731">
     <groups>
     </groups>
-    <test started-at="2021-06-13T13:23:33 IST" name="TestTitleValidation" finished-at="2021-06-13T13:23:44 IST" duration-ms="11574">
-      <class name="SeleniumWebAutomation.ValidateTitle">
-        <test-method is-config="true" signature="initateDriver()[pri:0, instance:SeleniumWebAutomation.ValidateTitle@24faea88]" started-at="2021-06-13T13:23:33 IST" name="initateDriver" finished-at="2021-06-13T13:23:43 IST" duration-ms="10207" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initateDriver -->
-        <test-method signature="ValidateAppTitle()[pri:0, instance:SeleniumWebAutomation.ValidateTitle@24faea88]" started-at="2021-06-13T13:23:43 IST" name="ValidateAppTitle" finished-at="2021-06-13T13:23:43 IST" duration-ms="142" status="FAIL">
-          <exception class="junit.framework.ComparisonFailure">
-            <message>
-              <![CDATA[expected:<FEATURED COURSES[]> but was:<FEATURED COURSES[123]>]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[junit.framework.ComparisonFailure: expected:<FEATURED COURSES[]> but was:<FEATURED COURSES[123]>
-at junit.framework.Assert.assertEquals(Assert.java:100)
-at junit.framework.Assert.assertEquals(Assert.java:107)
-at SeleniumWebAutomation.ValidateTitle.ValidateAppTitle(ValidateTitle.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- junit.framework.ComparisonFailure -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateAppTitle -->
-        <test-method is-config="true" signature="closeBrowserWindows()[pri:0, instance:SeleniumWebAutomation.ValidateTitle@24faea88]" started-at="2021-06-13T13:23:44 IST" name="closeBrowserWindows" finished-at="2021-06-13T13:23:44 IST" duration-ms="233" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowserWindows -->
-      </class> <!-- SeleniumWebAutomation.ValidateTitle -->
-    </test> <!-- TestTitleValidation -->
-    <test started-at="2021-06-13T13:23:33 IST" name="TestNavBarValidation" finished-at="2021-06-13T13:23:44 IST" duration-ms="11624">
-      <class name="SeleniumWebAutomation.ValidateNavBar">
-        <test-method is-config="true" signature="initateDriver()[pri:0, instance:SeleniumWebAutomation.ValidateNavBar@ab7a938]" started-at="2021-06-13T13:23:33 IST" name="initateDriver" finished-at="2021-06-13T13:23:43 IST" duration-ms="10221" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initateDriver -->
-        <test-method signature="validateNavBar()[pri:0, instance:SeleniumWebAutomation.ValidateNavBar@ab7a938]" started-at="2021-06-13T13:23:43 IST" name="validateNavBar" finished-at="2021-06-13T13:23:44 IST" duration-ms="575" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateNavBar -->
-        <test-method is-config="true" signature="closeBrowserWindows()[pri:0, instance:SeleniumWebAutomation.ValidateNavBar@ab7a938]" started-at="2021-06-13T13:23:44 IST" name="closeBrowserWindows" finished-at="2021-06-13T13:23:44 IST" duration-ms="814" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowserWindows -->
-      </class> <!-- SeleniumWebAutomation.ValidateNavBar -->
-    </test> <!-- TestNavBarValidation -->
-    <test started-at="2021-06-13T13:23:33 IST" name="TestHompage" finished-at="2021-06-13T13:23:49 IST" duration-ms="16572">
+    <test started-at="2021-06-15T08:35:04 IST" name="TestHompage" finished-at="2021-06-15T08:36:34 IST" duration-ms="90152">
       <class name="SeleniumWebAutomation.HomePage">
-        <test-method is-config="true" signature="initateDriver()[pri:0, instance:SeleniumWebAutomation.HomePage@1c9f0a20]" started-at="2021-06-13T13:23:33 IST" name="initateDriver" finished-at="2021-06-13T13:23:36 IST" duration-ms="3157" status="PASS">
+        <test-method is-config="true" signature="initateDriver()[pri:0, instance:SeleniumWebAutomation.HomePage@1c9f0a20]" started-at="2021-06-15T08:35:04 IST" name="initateDriver" finished-at="2021-06-15T08:35:09 IST" duration-ms="5011" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initateDriver -->
-        <test-method signature="basePageNavigation(java.lang.String, java.lang.String)[pri:0, instance:SeleniumWebAutomation.HomePage@1c9f0a20]" started-at="2021-06-13T13:23:36 IST" name="basePageNavigation" data-provider="getData" finished-at="2021-06-13T13:23:47 IST" duration-ms="11182" status="PASS">
+        <test-method signature="basePageNavigation(java.lang.String, java.lang.String)[pri:0, instance:SeleniumWebAutomation.HomePage@1c9f0a20]" started-at="2021-06-15T08:35:09 IST" name="basePageNavigation" data-provider="getData" finished-at="2021-06-15T08:35:57 IST" duration-ms="47425" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[abc@a.com]]>
+                <![CDATA[restricteduser@a.com]]>
               </value>
             </param>
             <param index="1">
@@ -94,11 +27,11 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
-        <test-method signature="basePageNavigation(java.lang.String, java.lang.String)[pri:0, instance:SeleniumWebAutomation.HomePage@1c9f0a20]" started-at="2021-06-13T13:23:47 IST" name="basePageNavigation" data-provider="getData" finished-at="2021-06-13T13:23:49 IST" duration-ms="2131" status="PASS">
+        <test-method signature="basePageNavigation(java.lang.String, java.lang.String)[pri:0, instance:SeleniumWebAutomation.HomePage@1c9f0a20]" started-at="2021-06-15T08:35:57 IST" name="basePageNavigation" data-provider="getData" finished-at="2021-06-15T08:36:34 IST" duration-ms="37539" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[cde@a.com]]>
+                <![CDATA[nonrestricteduser@a.com]]>
               </value>
             </param>
             <param index="1">
@@ -110,11 +43,43 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
-        <test-method is-config="true" signature="closeBrowserWindows()[pri:0, instance:SeleniumWebAutomation.HomePage@1c9f0a20]" started-at="2021-06-13T13:23:49 IST" name="closeBrowserWindows" finished-at="2021-06-13T13:23:49 IST" duration-ms="59" status="PASS">
+        <test-method is-config="true" signature="closeBrowserWindows()[pri:0, instance:SeleniumWebAutomation.HomePage@1c9f0a20]" started-at="2021-06-15T08:36:34 IST" name="closeBrowserWindows" finished-at="2021-06-15T08:36:34 IST" duration-ms="126" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowserWindows -->
       </class> <!-- SeleniumWebAutomation.HomePage -->
     </test> <!-- TestHompage -->
+    <test started-at="2021-06-15T08:36:35 IST" name="TestTitleValidation" finished-at="2021-06-15T08:36:53 IST" duration-ms="17727">
+      <class name="SeleniumWebAutomation.ValidateTitle">
+        <test-method is-config="true" signature="initateDriver()[pri:0, instance:SeleniumWebAutomation.ValidateTitle@24faea88]" started-at="2021-06-15T08:36:35 IST" name="initateDriver" finished-at="2021-06-15T08:36:53 IST" duration-ms="17523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initateDriver -->
+        <test-method signature="ValidateAppTitle()[pri:0, instance:SeleniumWebAutomation.ValidateTitle@24faea88]" started-at="2021-06-15T08:36:53 IST" name="ValidateAppTitle" finished-at="2021-06-15T08:36:53 IST" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateAppTitle -->
+        <test-method is-config="true" signature="closeBrowserWindows()[pri:0, instance:SeleniumWebAutomation.ValidateTitle@24faea88]" started-at="2021-06-15T08:36:53 IST" name="closeBrowserWindows" finished-at="2021-06-15T08:36:53 IST" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserWindows -->
+      </class> <!-- SeleniumWebAutomation.ValidateTitle -->
+    </test> <!-- TestTitleValidation -->
+    <test started-at="2021-06-15T08:36:53 IST" name="TestNavBarValidation" finished-at="2021-06-15T08:37:15 IST" duration-ms="21967">
+      <class name="SeleniumWebAutomation.ValidateNavBar">
+        <test-method is-config="true" signature="initateDriver()[pri:0, instance:SeleniumWebAutomation.ValidateNavBar@ab7a938]" started-at="2021-06-15T08:36:53 IST" name="initateDriver" finished-at="2021-06-15T08:37:15 IST" duration-ms="21733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initateDriver -->
+        <test-method signature="validateNavBar()[pri:0, instance:SeleniumWebAutomation.ValidateNavBar@ab7a938]" started-at="2021-06-15T08:37:15 IST" name="validateNavBar" finished-at="2021-06-15T08:37:15 IST" duration-ms="127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateNavBar -->
+        <test-method is-config="true" signature="closeBrowserWindows()[pri:0, instance:SeleniumWebAutomation.ValidateNavBar@ab7a938]" started-at="2021-06-15T08:37:15 IST" name="closeBrowserWindows" finished-at="2021-06-15T08:37:15 IST" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserWindows -->
+      </class> <!-- SeleniumWebAutomation.ValidateNavBar -->
+    </test> <!-- TestNavBarValidation -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -8,9 +8,9 @@ public class LandingPage {
 
 	public WebDriver driver;
 
-	By login = By.cssSelector("a[href*='sign_in']");
-	By title = By.cssSelector("div[class='text-center'] h2");
-	By navBar = By.cssSelector("nav[class*= 'navbar'] li");
+	By login = By.cssSelector("a[class*='dropdown-toggle']");
+	By title = By.id("learn-what-salesforce-can-do-for-you");
+	By navBar = By.cssSelector("ul[class*='searchEnabled'] li");
 
 	public LandingPage(WebDriver driver) {
 		// TODO Auto-generated constructor stub
